@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    user-select: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    width: 420px;
+    height: 385px;
+    border: solid 1px #000000; /*Видимая граница*/
+    background-color: #fff;
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-rows: 50px;
+    gap: 15px;
+}
+
+.calc button {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    background: #F1F1F1;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.calc_result {
+    width: 370px;
+    height: 60px;
+    grid-column: 1 / -1;
+    background-color: #F1F1F1;
+    border: solid 1px #000000;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+
+.c_btn {
+    grid-column: 4 / 4;
+}
+
+.seven_btn {
+    grid-column: 3 / 3;
+}
+
+.four_btn {
+    grid-column: 3 / 3;
+}
+
+.one_btn {
+    grid-column: 3 / 3;
+}
+
+.zero_btn {
+    grid-column: 3 / 3;
+}
+
+.m-_btn {
+    grid-column: 1 / 1;
+}
+
+.result_btn {
+    min-height: 95px;
+    grid-column-start: 7;
+    grid-row-start: 5;
+    grid-row-end: -1;
+}
