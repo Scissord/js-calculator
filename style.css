@@ -87,6 +87,14 @@ body {
     grid-column: 1 / 1;
 }
 
+.mr_btn {
+    grid-column: 1 / 1;
+}
+
+.m_plus_btn {
+    grid-column: 1 / 1;
+}
+
 .result_btn {
     min-height: 95px;
     grid-column-start: 7;
